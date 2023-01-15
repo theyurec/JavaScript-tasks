@@ -6,3 +6,6 @@
 	только положительные изменения цен: [100, 150]
   */
   const prices = [[100, 200], [120, 100], [200, 350]];
+
+const result = prices.map(elem => elem[1] - elem[0]).filter(elem2 => elem2 > 0)
+console.log(result)
